@@ -71,6 +71,16 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable UIColor *trackColor;
 
 /**
+ *  Start gradient color of the slider.
+ */
+@property (nonatomic, strong) IBInspectable UIColor *trackTintStartColor;
+
+/**
+ *  End gradient color of the slider.
+ */
+@property (nonatomic, strong) IBInspectable UIColor *trackTintEndColor;
+
+/**
  *  Color of the slider main wheel.
  */
 @property (nonatomic, strong) IBInspectable UIColor *sliderCircleColor;
@@ -109,7 +119,7 @@ IB_DESIGNABLE
 @property (nonatomic) StepSliderTextOrientation labelOrientation;
 
 /**
- *  If `YES` adjust first and last labels to StepSlider frame. And change alingment to left and right. 
+ *  If `YES` adjust first and last labels to StepSlider frame. And change alingment to left and right.
  *  Otherwise label position is same as trackCircle, and aligment always is center.
  */
 @property (nonatomic) IBInspectable BOOL adjustLabel;
